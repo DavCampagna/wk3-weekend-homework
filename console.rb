@@ -4,10 +4,12 @@ require_relative('models/customer')
 
 require('pry-byebug')
 
-
-
-
-
+customer1 = Customer.new({
+  'name' => 'Davide',
+  'funds' => 20
+  })
+  
+customer1.save()
 
 
 
@@ -24,4 +26,4 @@ require('pry-byebug')
 
 
 binding.pry
-nil 
+nil
